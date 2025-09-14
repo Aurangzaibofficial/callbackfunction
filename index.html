@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Check Console for Callback </h2>
+  <script>
+    function greet(name, callback) {
+      console.log("Hello " + name);
+      callback();
+    }
+    greet("Zaib", function() {
+      console.log("This is a simple callback function!");
+    })
+  </script>
+</body>
+</html>
